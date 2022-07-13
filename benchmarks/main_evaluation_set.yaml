@@ -1,0 +1,1109 @@
+source_language: en
+target_language: es
+datasets:
+- name: EMEA
+  type: Healthcare
+  test:
+    source: NMT_datasets/en.es/EMEA/test.en
+    target: NMT_datasets/en.es/EMEA/test.es
+    size: 4320
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/EMEA/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.529068648815155
+        BLEU: 8.172051978954118
+        CHRF: 31.76483572690416
+        COMET: 0.14579980024826472
+        ROUGE: 0.20561876847725036
+        TER: 84.29454655773033
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/EMEA/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7727159261703491
+        BLEU: 48.06740962281665
+        CHRF: 70.67229406506753
+        COMET: 0.817304170952627
+        ROUGE: 0.7063871783382788
+        TER: 38.67414296324968
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/EMEA/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7804614305496216
+        BLEU: 50.3820491139359
+        CHRF: 71.98651940230877
+        COMET: 0.8378314813107459
+        ROUGE: 0.7214073366907738
+        TER: 36.758690671715954
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Marian.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.798122227191925
+        BLEU: 54.56588465357269
+        CHRF: 74.1666977600976
+        COMET: 0.8619404632744759
+        ROUGE: 0.7523870514755825
+        TER: 35.69164461089433
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Marian.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7918379306793213
+        BLEU: 54.13322476701331
+        CHRF: 73.79768733738727
+        COMET: 0.8546828938717091
+        ROUGE: 0.7500302861676988
+        TER: 35.761734891360064
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7537753582000732
+        BLEU: 47.71354947064068
+        CHRF: 70.71139078041554
+        COMET: 0.7774654295873242
+        ROUGE: 0.6916849221675444
+        TER: 38.745279367304455
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7511901259422302
+        BLEU: 47.58607953880469
+        CHRF: 70.45112275025063
+        COMET: 0.7644650985685143
+        ROUGE: 0.689073775118112
+        TER: 38.89278279335921
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7612490057945251
+        BLEU: 47.76311689034808
+        CHRF: 70.64352885115939
+        COMET: 0.7882710098159603
+        ROUGE: 0.6955818492169895
+        TER: 39.09573076963312
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7585086822509766
+        BLEU: 47.49622485277926
+        CHRF: 70.46190160059238
+        COMET: 0.7813417544493589
+        ROUGE: 0.6930126199735317
+        TER: 39.37818413867414
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.M2M100.1.2B.es
+      errors_count: 10
+      score:
+        BERTScore: 0.7134875059127808
+        BLEU: 41.568744103270205
+        CHRF: 65.69887382147931
+        COMET: 0.7294054644035727
+        ROUGE: 0.6447219788571538
+        TER: 43.30533209193334
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.M2M100.418M.es
+      errors_count: 20
+      score:
+        BERTScore: 0.666267991065979
+        BLEU: 36.05797949497051
+        CHRF: 61.81128087897731
+        COMET: 0.6172543206239223
+        ROUGE: 0.6038022485736076
+        TER: 47.87584605245264
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.MBart50.one_to_many.es
+      errors_count: 32
+      score:
+        BERTScore: 0.5234130620956421
+        BLEU: 29.437109985945995
+        CHRF: 56.14588967691033
+        COMET: 0.32303163074474367
+        ROUGE: 0.5182883784726151
+        TER: 62.934795116695085
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.MBart50.many_to_many.es
+      errors_count: 32
+      score:
+        BERTScore: 0.5209786295890808
+        BLEU: 25.838150345332906
+        CHRF: 54.31112311204185
+        COMET: 0.3153936166385258
+        ROUGE: 0.5134197290614192
+        TER: 73.82494167860992
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: WikiMatrix
+  type: General
+  test:
+    source: NMT_datasets/en.es/WikiMatrix/test.en
+    target: NMT_datasets/en.es/WikiMatrix/test.es
+    size: 5761
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/WikiMatrix/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.5442490577697754
+        BLEU: 8.716020442283426
+        CHRF: 31.62859962057706
+        COMET: -0.0252587936247617
+        ROUGE: 0.21036026057985152
+        TER: 82.86984285982597
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/WikiMatrix/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7568231225013733
+        BLEU: 48.76164218621834
+        CHRF: 68.86328878386578
+        COMET: 0.6990218044123991
+        ROUGE: 0.6998880487904285
+        TER: 37.85763475865523
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/WikiMatrix/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7512028813362122
+        BLEU: 47.44375557535291
+        CHRF: 67.95560718421541
+        COMET: 0.6930729398877981
+        ROUGE: 0.6895280609847007
+        TER: 38.88186314405559
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Marian.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7418806552886963
+        BLEU: 45.70631347625307
+        CHRF: 66.8404667597492
+        COMET: 0.6448384092299785
+        ROUGE: 0.6816737336104289
+        TER: 39.98497464471295
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Marian.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.737697184085846
+        BLEU: 44.88381503087922
+        CHRF: 66.2978215113699
+        COMET: 0.626783230635707
+        ROUGE: 0.6757927728401646
+        TER: 40.77818819257497
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.744646430015564
+        BLEU: 46.4109698180261
+        CHRF: 67.48817773949203
+        COMET: 0.6545219609862741
+        ROUGE: 0.6875484590353828
+        TER: 39.38834282852313
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.745884895324707
+        BLEU: 47.06522451745735
+        CHRF: 67.88721695653497
+        COMET: 0.6583650555342664
+        ROUGE: 0.6899123486722124
+        TER: 39.04401176986164
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7478359937667847
+        BLEU: 46.58274080857334
+        CHRF: 67.70085225555242
+        COMET: 0.6672361156065971
+        ROUGE: 0.6888601788024601
+        TER: 39.24873223564765
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7459529042243958
+        BLEU: 46.29688848891645
+        CHRF: 67.49275785266593
+        COMET: 0.6590679316246205
+        ROUGE: 0.6865638250200649
+        TER: 39.5580041319727
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.M2M100.1.2B.es
+      errors_count: 8
+      score:
+        BERTScore: 0.7279698848724365
+        BLEU: 44.14953738321062
+        CHRF: 65.64791092598485
+        COMET: 0.6334473547079361
+        ROUGE: 0.671372380076807
+        TER: 40.88900018781694
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.M2M100.418M.es
+      errors_count: 16
+      score:
+        BERTScore: 0.6976765990257263
+        BLEU: 40.49229204213876
+        CHRF: 63.01185145439909
+        COMET: 0.5257209914435277
+        ROUGE: 0.6453483208303515
+        TER: 43.76885995116759
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.MBart50.one_to_many.es
+      errors_count: 31
+      score:
+        BERTScore: 0.6570965647697449
+        BLEU: 38.40399775644863
+        CHRF: 60.58199745336754
+        COMET: 0.485695534411768
+        ROUGE: 0.6203677101280466
+        TER: 46.959243723783885
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.MBart50.many_to_many.es
+      errors_count: 31
+      score:
+        BERTScore: 0.6505540609359741
+        BLEU: 37.30010808681805
+        CHRF: 59.650343029500675
+        COMET: 0.46626472953371373
+        ROUGE: 0.6104525064244671
+        TER: 49.481625242596884
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: TED2020
+  type: General
+  test:
+    source: NMT_datasets/en.es/TED2020/test.en
+    target: NMT_datasets/en.es/TED2020/test.es
+    size: 5249
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/TED2020/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.523609459400177
+        BLEU: 1.0851685734285268
+        CHRF: 22.01196845292353
+        COMET: -0.1147011485270862
+        ROUGE: 0.08263539054490181
+        TER: 95.58176803816339
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/TED2020/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7671769857406616
+        BLEU: 44.7349592475838
+        CHRF: 68.93353547228996
+        COMET: 0.7707181090822951
+        ROUGE: 0.6906382715355145
+        TER: 38.380478533094816
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/TED2020/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7688458561897278
+        BLEU: 44.842359344262576
+        CHRF: 68.7999928330377
+        COMET: 0.784108323048801
+        ROUGE: 0.6918549074814718
+        TER: 38.12239117471676
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Marian.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7570996880531311
+        BLEU: 43.16522490927874
+        CHRF: 67.60082876045607
+        COMET: 0.7297093545516591
+        ROUGE: 0.6788783865773658
+        TER: 39.77526833631485
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Marian.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7542604207992554
+        BLEU: 43.2159551218999
+        CHRF: 67.21693056445812
+        COMET: 0.713751753774069
+        ROUGE: 0.6757022215523795
+        TER: 39.702593917710196
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7644611597061157
+        BLEU: 44.86302106675282
+        CHRF: 68.90241999168447
+        COMET: 0.7671926708022233
+        ROUGE: 0.6869661648718844
+        TER: 38.315257901013716
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.762859582901001
+        BLEU: 44.52480983764462
+        CHRF: 68.69701254854861
+        COMET: 0.7607653508848902
+        ROUGE: 0.6853699044515283
+        TER: 38.673039654144304
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7575708031654358
+        BLEU: 43.374737957540894
+        CHRF: 67.71484956686264
+        COMET: 0.7391619264858067
+        ROUGE: 0.678836897310864
+        TER: 39.606626416219434
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7563032507896423
+        BLEU: 43.10919055363032
+        CHRF: 67.57255437048573
+        COMET: 0.7340035473324243
+        ROUGE: 0.6775222631786866
+        TER: 39.803220035778175
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.M2M100.1.2B.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7405657172203064
+        BLEU: 40.570076709849445
+        CHRF: 65.35798260179708
+        COMET: 0.6744117800715532
+        ROUGE: 0.6529001612734778
+        TER: 42.04028771615981
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.M2M100.418M.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7143799066543579
+        BLEU: 35.85568718090101
+        CHRF: 62.29472402759908
+        COMET: 0.5478337540098385
+        ROUGE: 0.6202347516293446
+        TER: 45.943276684555755
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.MBart50.one_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7251074910163879
+        BLEU: 36.45347005155527
+        CHRF: 62.637319237540936
+        COMET: 0.6413704571909429
+        ROUGE: 0.628133977871825
+        TER: 45.9041443053071
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.MBart50.many_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7214148640632629
+        BLEU: 35.8483841870679
+        CHRF: 62.29611841546435
+        COMET: 0.6253165586051866
+        ROUGE: 0.6225671546988596
+        TER: 46.199500596302926
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: OpenSubtitles
+  type: General
+  test:
+    source: NMT_datasets/en.es/OpenSubtitles/test.en
+    target: NMT_datasets/en.es/OpenSubtitles/test.es
+    size: 3097
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/OpenSubtitles/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.4490330219268799
+        BLEU: 1.4931634758775485
+        CHRF: 18.02143870282405
+        COMET: -0.42692255014466457
+        ROUGE: 0.09965566474637746
+        TER: 96.65917643555242
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/OpenSubtitles/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6754661798477173
+        BLEU: 34.87153319226631
+        CHRF: 59.04353234735551
+        COMET: 0.5477925448007532
+        ROUGE: 0.6067471553165685
+        TER: 48.330941874001674
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/OpenSubtitles/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6858733892440796
+        BLEU: 36.52580925484951
+        CHRF: 59.99781389426874
+        COMET: 0.5959908973243994
+        ROUGE: 0.6184030387215337
+        TER: 46.91772477461624
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Marian.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6884943842887878
+        BLEU: 37.795843286438185
+        CHRF: 59.91623344013025
+        COMET: 0.5743875205306312
+        ROUGE: 0.6246053227468199
+        TER: 45.41245905189918
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Marian.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6858417987823486
+        BLEU: 37.173718451590304
+        CHRF: 59.3010123184549
+        COMET: 0.5635163762146883
+        ROUGE: 0.6216979901505943
+        TER: 46.64428621707231
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6769183874130249
+        BLEU: 35.421046088017455
+        CHRF: 59.44990045732116
+        COMET: 0.5562641092220939
+        ROUGE: 0.6087713294272626
+        TER: 48.000649754988224
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6692662239074707
+        BLEU: 35.013238693329406
+        CHRF: 59.178477704683075
+        COMET: 0.5402500677726318
+        ROUGE: 0.602771976773621
+        TER: 48.77494111595419
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6657803058624268
+        BLEU: 33.54060246274769
+        CHRF: 58.303296704610965
+        COMET: 0.5101630072367116
+        ROUGE: 0.5978434970410542
+        TER: 49.65752497495736
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6632236838340759
+        BLEU: 32.94131560004578
+        CHRF: 57.98815741167596
+        COMET: 0.502057951487406
+        ROUGE: 0.5945585186829403
+        TER: 50.185450902888704
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.M2M100.1.2B.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6438055038452148
+        BLEU: 30.413483774595452
+        CHRF: 54.877046196470744
+        COMET: 0.42401014334315595
+        ROUGE: 0.563787602062812
+        TER: 52.28361805235943
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.M2M100.418M.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6208828687667847
+        BLEU: 26.857427770287273
+        CHRF: 51.74178268953267
+        COMET: 0.28084787612490436
+        ROUGE: 0.5347975854291467
+        TER: 55.8329046755286
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.MBart50.one_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6263659000396729
+        BLEU: 26.532424079121295
+        CHRF: 51.680951800364014
+        COMET: 0.35041366548277136
+        ROUGE: 0.5360967694678183
+        TER: 57.58995045618215
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.MBart50.many_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6185308694839478
+        BLEU: 24.575661263281408
+        CHRF: 50.685011203256245
+        COMET: 0.3258849579899839
+        ROUGE: 0.5237813897091245
+        TER: 61.72672388120313
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: EUbookshop
+  type: General
+  test:
+    source: NMT_datasets/en.es/EUbookshop/test.en
+    target: NMT_datasets/en.es/EUbookshop/test.es
+    size: 5313
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/EUbookshop/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.40081167221069336
+        BLEU: 2.3896297326108638
+        CHRF: 24.956097730219906
+        COMET: -0.5158612035139877
+        ROUGE: 0.11117277218417365
+        TER: 94.15897452986326
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/EUbookshop/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6561675667762756
+        BLEU: 36.761759894013686
+        CHRF: 60.294820931762146
+        COMET: 0.46196585587397115
+        ROUGE: 0.5998082058182473
+        TER: 52.522576560365216
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/EUbookshop/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6465345621109009
+        BLEU: 34.279661863177225
+        CHRF: 58.907647138529285
+        COMET: 0.45356685736874125
+        ROUGE: 0.5851051416790554
+        TER: 53.513945816255124
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Marian.beam_4.es
+      errors_count: 6
+      score:
+        BERTScore: 0.6461142897605896
+        BLEU: 36.463479418324546
+        CHRF: 59.51892802825972
+        COMET: 0.45502869636745924
+        ROUGE: 0.5999519016858825
+        TER: 56.04540859964233
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Marian.greedy.es
+      errors_count: 6
+      score:
+        BERTScore: 0.6408596038818359
+        BLEU: 35.83362217312343
+        CHRF: 58.825527207464035
+        COMET: 0.43902665717674866
+        ROUGE: 0.5953295873491123
+        TER: 57.686582914014686
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6370747685432434
+        BLEU: 34.27897546099372
+        CHRF: 58.79358560544059
+        COMET: 0.42513313856969415
+        ROUGE: 0.5737500503761335
+        TER: 54.077110200273246
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.636871337890625
+        BLEU: 34.24680080860758
+        CHRF: 58.776602264065694
+        COMET: 0.4257369741664927
+        ROUGE: 0.5744098652146679
+        TER: 54.13653681673276
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6353667378425598
+        BLEU: 33.221151426636915
+        CHRF: 58.18163198537696
+        COMET: 0.41679130232674344
+        ROUGE: 0.5704402731907248
+        TER: 54.81577748897553
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6342415809631348
+        BLEU: 33.14476839428884
+        CHRF: 58.055893181996595
+        COMET: 0.41041977927698753
+        ROUGE: 0.5700217402909226
+        TER: 55.046263898608196
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.M2M100.1.2B.es
+      errors_count: 21
+      score:
+        BERTScore: 0.5993297696113586
+        BLEU: 30.74004907117686
+        CHRF: 55.86534781784249
+        COMET: 0.38064740047471607
+        ROUGE: 0.5491881408329657
+        TER: 56.58302509247226
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.M2M100.418M.es
+      errors_count: 39
+      score:
+        BERTScore: 0.5579412579536438
+        BLEU: 27.37100960260283
+        CHRF: 53.264653903585504
+        COMET: 0.2823150607887161
+        ROUGE: 0.5211432132797409
+        TER: 59.58490230708565
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.MBart50.one_to_many.es
+      errors_count: 52
+      score:
+        BERTScore: 0.42052826285362244
+        BLEU: 25.590215981335326
+        CHRF: 48.49946677989307
+        COMET: -0.03849637104416048
+        ROUGE: 0.4451674401549249
+        TER: 67.75633976473725
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.MBart50.many_to_many.es
+      errors_count: 52
+      score:
+        BERTScore: 0.42088502645492554
+        BLEU: 24.217305216025068
+        CHRF: 48.02102639744734
+        COMET: -0.039779137488354314
+        ROUGE: 0.43779743998455295
+        TER: 77.10797871749587
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: ParaCrawl
+  type: General
+  test:
+    source: NMT_datasets/en.es/ParaCrawl/test.en
+    target: NMT_datasets/en.es/ParaCrawl/test.es
+    size: 5227
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/ParaCrawl/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.4286806583404541
+        BLEU: 5.162025886611293
+        CHRF: 27.831979585240624
+        COMET: -0.2772885413559965
+        ROUGE: 0.17774729288061078
+        TER: 86.17389806503473
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/ParaCrawl/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6443978548049927
+        BLEU: 41.45402788845741
+        CHRF: 63.86757269462715
+        COMET: 0.5126064374778503
+        ROUGE: 0.6272411611332062
+        TER: 43.749162663400256
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/ParaCrawl/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6527650356292725
+        BLEU: 42.19097413569869
+        CHRF: 64.38102669274649
+        COMET: 0.5369014580316609
+        ROUGE: 0.6374014453793215
+        TER: 43.161591609408795
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Marian.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6317923665046692
+        BLEU: 38.83286613035748
+        CHRF: 62.29118444428139
+        COMET: 0.4731579184573502
+        ROUGE: 0.6107335194516855
+        TER: 45.385557618327624
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Marian.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6283443570137024
+        BLEU: 38.24709439063881
+        CHRF: 61.96052369140107
+        COMET: 0.4618946232667087
+        ROUGE: 0.6073208414170351
+        TER: 46.03245995138663
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7005010843276978
+        BLEU: 51.95655502898032
+        CHRF: 69.99178585893388
+        COMET: 0.5979531376613887
+        ROUGE: 0.705295609058511
+        TER: 35.48584661907405
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7016940712928772
+        BLEU: 51.9727364375973
+        CHRF: 70.04685352398049
+        COMET: 0.5990174622628613
+        ROUGE: 0.7053797150861492
+        TER: 35.51072747803786
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6619097590446472
+        BLEU: 44.6574563775403
+        CHRF: 65.5796214502044
+        COMET: 0.5231493922338526
+        ROUGE: 0.6524146329345456
+        TER: 41.12136117437654
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.6619437336921692
+        BLEU: 44.58485828854202
+        CHRF: 65.53132888591972
+        COMET: 0.5215085169807524
+        ROUGE: 0.651503832591481
+        TER: 41.37782541292656
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.M2M100.1.2B.es
+      errors_count: 10
+      score:
+        BERTScore: 0.6035155057907104
+        BLEU: 35.592066556860274
+        CHRF: 59.47391770885041
+        COMET: 0.4129415014240216
+        ROUGE: 0.5903450750744458
+        TER: 47.90809393481215
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.M2M100.418M.es
+      errors_count: 20
+      score:
+        BERTScore: 0.5704493522644043
+        BLEU: 32.13782254715722
+        CHRF: 57.062137909196245
+        COMET: 0.32866182187238935
+        ROUGE: 0.5653737662482584
+        TER: 50.855518765909395
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.MBart50.one_to_many.es
+      errors_count: 16
+      score:
+        BERTScore: 0.530498206615448
+        BLEU: 29.78732151035897
+        CHRF: 53.7935074160702
+        COMET: 0.23219611524205683
+        ROUGE: 0.5234867744219744
+        TER: 58.1991999846887
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.MBart50.many_to_many.es
+      errors_count: 16
+      score:
+        BERTScore: 0.5272485613822937
+        BLEU: 27.688939327961705
+        CHRF: 52.79500928050873
+        COMET: 0.2148362751344587
+        ROUGE: 0.5133685191675436
+        TER: 62.94570231009205
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: CCAligned
+  type: General
+  test:
+    source: NMT_datasets/en.es/CCAligned/test.en
+    target: NMT_datasets/en.es/CCAligned/test.es
+    size: 5402
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/CCAligned/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.5323939919471741
+        BLEU: 5.863867449106478
+        CHRF: 29.7443096816721
+        COMET: 0.233220876012134
+        ROUGE: 0.20103101156027292
+        TER: 83.74419041100427
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/CCAligned/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7769351005554199
+        BLEU: 53.7959607411367
+        CHRF: 74.46716566282625
+        COMET: 0.9133098399854841
+        ROUGE: 0.7270140170835675
+        TER: 30.045372752061645
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/CCAligned/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.776703417301178
+        BLEU: 53.12559375177083
+        CHRF: 74.28967566649341
+        COMET: 0.9202860933961261
+        ROUGE: 0.7276836689057958
+        TER: 30.04206087234912
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Marian.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7587482333183289
+        BLEU: 50.79671307415241
+        CHRF: 72.52059186230123
+        COMET: 0.8652937154125965
+        ROUGE: 0.7064536515809685
+        TER: 31.99055010322025
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Marian.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7536994218826294
+        BLEU: 49.83947005873217
+        CHRF: 71.91525600484674
+        COMET: 0.8512309465004957
+        ROUGE: 0.6999645827786889
+        TER: 32.45310930307011
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7595941424369812
+        BLEU: 55.11153352245975
+        CHRF: 75.07501176490025
+        COMET: 0.8680484017922023
+        ROUGE: 0.722714233862379
+        TER: 29.41501164677699
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7575717568397522
+        BLEU: 54.796034422079764
+        CHRF: 74.93168350460991
+        COMET: 0.8626309000217707
+        ROUGE: 0.7213821063683268
+        TER: 29.71970458032964
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7555522918701172
+        BLEU: 50.176161453392076
+        CHRF: 72.22458522539708
+        COMET: 0.864571828442022
+        ROUGE: 0.7011624566990607
+        TER: 33.16957928088052
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.753607988357544
+        BLEU: 49.94172601613467
+        CHRF: 72.03782940805102
+        COMET: 0.8584671577953163
+        ROUGE: 0.6991168768128344
+        TER: 33.44556925692459
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.M2M100.1.2B.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7300020456314087
+        BLEU: 45.52594147714044
+        CHRF: 68.57883898464866
+        COMET: 0.8075223491209573
+        ROUGE: 0.6704941259754235
+        TER: 35.84005828908294
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.M2M100.418M.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7066434621810913
+        BLEU: 41.57043261043657
+        CHRF: 65.87382437991059
+        COMET: 0.7255387418096219
+        ROUGE: 0.6439498884432105
+        TER: 39.12875484362408
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.MBart50.one_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.5916268825531006
+        BLEU: 34.6311462888464
+        CHRF: 57.32357347158157
+        COMET: 0.3985203387455719
+        ROUGE: 0.5602504941021387
+        TER: 58.66111742821501
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.MBart50.many_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.5902078747749329
+        BLEU: 29.95379012064146
+        CHRF: 56.420712606092124
+        COMET: 0.4041394871083405
+        ROUGE: 0.5534757237364089
+        TER: 71.74193833279975
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0

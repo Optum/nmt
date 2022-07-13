@@ -1,0 +1,161 @@
+source_language: en
+target_language: es
+datasets:
+- name: TED2013
+  type: General
+  test:
+    source: NMT_datasets/en.es/TED2013/test.en
+    target: NMT_datasets/en.es/TED2013/test.es
+    size: 9
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/TED2013/test.Empty.es
+      errors_count: 0
+      score:
+        BERTScore: 0.5768252611160278
+        BLEU: 2.2414745418875124
+        CHRF: 24.194181958232246
+        COMET: 0.1912938261197673
+        ROUGE: 0.12773857251598653
+        TER: 86.04651162790698
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/TED2013/test.Azure.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7806432247161865
+        BLEU: 45.59610743447661
+        CHRF: 72.45195769900799
+        COMET: 0.8511023786332872
+        ROUGE: 0.7091263149808946
+        TER: 35.46511627906977
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/TED2013/test.Google.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7590566277503967
+        BLEU: 46.818064112991046
+        CHRF: 71.11603075470879
+        COMET: 0.8333047297265794
+        ROUGE: 0.7046230471470214
+        TER: 36.04651162790697
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Marian.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7527940273284912
+        BLEU: 48.894664591131324
+        CHRF: 71.91763880464114
+        COMET: 0.8082172274589539
+        ROUGE: 0.6910561159481374
+        TER: 33.13953488372093
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Marian.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7560457587242126
+        BLEU: 48.513894552729525
+        CHRF: 71.55397099664715
+        COMET: 0.8194333348009322
+        ROUGE: 0.7000822251025816
+        TER: 32.55813953488372
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7624641060829163
+        BLEU: 44.25072773710997
+        CHRF: 71.77062539889619
+        COMET: 0.8099097543292575
+        ROUGE: 0.683020111640947
+        TER: 36.627906976744185
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.24x6.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7834087014198303
+        BLEU: 45.11874895502394
+        CHRF: 72.31292174652792
+        COMET: 0.8399617473284403
+        ROUGE: 0.698236151253977
+        TER: 35.46511627906977
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+      score:
+        BERTScore: 0.762043833732605
+        BLEU: 46.614353254082594
+        CHRF: 71.85816259071892
+        COMET: 0.840400497118632
+        ROUGE: 0.6984188863491781
+        TER: 34.883720930232556
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.12x2.greedy.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7817423343658447
+        BLEU: 47.65046151193506
+        CHRF: 73.33126176050848
+        COMET: 0.8772782451576657
+        ROUGE: 0.7298396154478834
+        TER: 32.55813953488372
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.M2M100.1.2B.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7786604762077332
+        BLEU: 44.29823264749614
+        CHRF: 71.9847732366167
+        COMET: 0.8954677118195428
+        ROUGE: 0.7032745533506002
+        TER: 35.46511627906977
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.M2M100.418M.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7663466334342957
+        BLEU: 46.44474955936638
+        CHRF: 69.75128910069682
+        COMET: 0.7931015955077277
+        ROUGE: 0.6800593588154772
+        TER: 37.2093023255814
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.MBart50.one_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7649180889129639
+        BLEU: 38.94285872482939
+        CHRF: 66.70424543149123
+        COMET: 0.8359118236435784
+        ROUGE: 0.685942371486571
+        TER: 38.372093023255815
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.MBart50.many_to_many.es
+      errors_count: 0
+      score:
+        BERTScore: 0.7343311309814453
+        BLEU: 39.2857912964531
+        CHRF: 65.02181834788875
+        COMET: 0.728519019153383
+        ROUGE: 0.6787643621661849
+        TER: 39.53488372093023
+  dev:
+    source: NMT_datasets/en.es/TED2013/dev.en
+    target: NMT_datasets/en.es/TED2013/dev.es
+    size: 87
+  train:
+    source: NMT_datasets/en.es/TED2013/train.en
+    target: NMT_datasets/en.es/TED2013/train.es
+    size: 90

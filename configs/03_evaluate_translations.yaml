@@ -1,0 +1,17 @@
+defaults:
+  - _self_
+  - datasets_to_evaluate: main_evaluation_set
+  - translation_scorers: scorers
+
+create_yaml_evaluation_results: True
+yaml_evaluation_results_folder: benchmarks
+
+create_tsv_evaluation_results: True
+tsv_evaluation_results_folder: benchmarks
+
+evaluation_subsets:
+  test: true
+  dev: false
+  train: false
+
+verbose: True

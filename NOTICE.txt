@@ -1,9 +1,9 @@
-<Insert Project Name Here>
+NMT evaluation framework
 Copyright 2022 Optum
 
 Project Description:
 ====================
-<Short description of your project>
+Framework to compare different Machine Translation systems between each other
 
 Author(s):
-<List the names and GitHub IDs of the original project authors>
+Anton Masalovich (TonyMas)

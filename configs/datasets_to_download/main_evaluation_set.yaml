@@ -1,0 +1,52 @@
+source_language: en
+target_language: es
+
+datasets:
+  - name: EMEA
+    type: Healthcare
+    test:
+      size: 8000
+      no_duplicates: true
+      min_str_length: 30
+
+  - name: WikiMatrix
+    type: General
+    test:
+      size: 6000
+      no_duplicates: true
+      min_str_length: 30
+
+  - name: TED2020
+    type: General
+    test:
+      size: 6000
+      no_duplicates: true
+      min_str_length: 30
+
+  - name: OpenSubtitles
+    type: General
+    test:
+      size: 8000
+      no_duplicates: true
+      min_str_length: 30
+
+  - name: EUbookshop
+    type: General
+    test:
+      size: 6000
+      no_duplicates: true
+      min_str_length: 30
+
+  - name: ParaCrawl
+    type: General
+    test:
+      size: 6000
+      no_duplicates: true
+      min_str_length: 30
+
+  - name: CCAligned
+    type: General
+    test:
+      size: 8000
+      no_duplicates: true
+      min_str_length: 30

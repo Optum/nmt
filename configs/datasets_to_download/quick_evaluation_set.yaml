@@ -1,0 +1,18 @@
+source_language: en
+target_language: es
+
+datasets:
+  - name: TED2013
+    type: General
+    test:
+      size: 10
+      no_duplicates: true
+      min_str_length: 30
+    dev:
+      size: 100
+      no_duplicates: true
+      min_str_length: 30
+    train:
+      size: 100
+      no_duplicates: true
+      min_str_length: 30

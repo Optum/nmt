@@ -1,0 +1,102 @@
+source_language: en
+target_language: es
+
+datasets:
+- name: EMEA
+  type: Healthcare
+  test:
+    source: NMT_datasets/en.es/EMEA/test.en
+    target: NMT_datasets/en.es/EMEA/test.es
+    size: 4320
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: WikiMatrix
+  type: General
+  test:
+    source: NMT_datasets/en.es/WikiMatrix/test.en
+    target: NMT_datasets/en.es/WikiMatrix/test.es
+    size: 5761
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: TED2020
+  type: General
+  test:
+    source: NMT_datasets/en.es/TED2020/test.en
+    target: NMT_datasets/en.es/TED2020/test.es
+    size: 5249
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: OpenSubtitles
+  type: General
+  test:
+    source: NMT_datasets/en.es/OpenSubtitles/test.en
+    target: NMT_datasets/en.es/OpenSubtitles/test.es
+    size: 3097
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: EUbookshop
+  type: General
+  test:
+    source: NMT_datasets/en.es/EUbookshop/test.en
+    target: NMT_datasets/en.es/EUbookshop/test.es
+    size: 5313
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: ParaCrawl
+  type: General
+  test:
+    source: NMT_datasets/en.es/ParaCrawl/test.en
+    target: NMT_datasets/en.es/ParaCrawl/test.es
+    size: 5227
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: CCAligned
+  type: General
+  test:
+    source: NMT_datasets/en.es/CCAligned/test.en
+    target: NMT_datasets/en.es/CCAligned/test.es
+    size: 5402
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0

@@ -1,0 +1,12 @@
+- class: BERTScore
+  #settings:
+- class: BLEU
+  #settings:
+- class: CHRF
+  #settings:
+- class: COMET
+  #settings:
+- class: ROUGE
+  #settings:
+- class: TER
+  #settings:

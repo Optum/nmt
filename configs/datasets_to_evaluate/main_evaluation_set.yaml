@@ -1,0 +1,472 @@
+source_language: en
+target_language: es
+datasets:
+- name: EMEA
+  type: Healthcare
+  test:
+    source: NMT_datasets/en.es/EMEA/test.en
+    target: NMT_datasets/en.es/EMEA/test.es
+    size: 4320
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/EMEA/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/EMEA/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/EMEA/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Marian.beam_4.es
+      errors_count: 0
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Marian.greedy.es
+      errors_count: 0
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EMEA/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.M2M100.1.2B.es
+      errors_count: 10
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.M2M100.418M.es
+      errors_count: 20
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.MBart50.one_to_many.es
+      errors_count: 32
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.MBart50.many_to_many.es
+      errors_count: 32
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: WikiMatrix
+  type: General
+  test:
+    source: NMT_datasets/en.es/WikiMatrix/test.en
+    target: NMT_datasets/en.es/WikiMatrix/test.es
+    size: 5761
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/WikiMatrix/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/WikiMatrix/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/WikiMatrix/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Marian.beam_4.es
+      errors_count: 0
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Marian.greedy.es
+      errors_count: 0
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/WikiMatrix/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.M2M100.1.2B.es
+      errors_count: 8
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.M2M100.418M.es
+      errors_count: 16
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.MBart50.one_to_many.es
+      errors_count: 31
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.MBart50.many_to_many.es
+      errors_count: 31
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: TED2020
+  type: General
+  test:
+    source: NMT_datasets/en.es/TED2020/test.en
+    target: NMT_datasets/en.es/TED2020/test.es
+    size: 5249
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/TED2020/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/TED2020/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/TED2020/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Marian.beam_4.es
+      errors_count: 0
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Marian.greedy.es
+      errors_count: 0
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2020/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.M2M100.1.2B.es
+      errors_count: 0
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.M2M100.418M.es
+      errors_count: 0
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.MBart50.one_to_many.es
+      errors_count: 0
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.MBart50.many_to_many.es
+      errors_count: 0
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: OpenSubtitles
+  type: General
+  test:
+    source: NMT_datasets/en.es/OpenSubtitles/test.en
+    target: NMT_datasets/en.es/OpenSubtitles/test.es
+    size: 3097
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/OpenSubtitles/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/OpenSubtitles/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/OpenSubtitles/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Marian.beam_4.es
+      errors_count: 0
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Marian.greedy.es
+      errors_count: 0
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/OpenSubtitles/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.M2M100.1.2B.es
+      errors_count: 0
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.M2M100.418M.es
+      errors_count: 0
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.MBart50.one_to_many.es
+      errors_count: 0
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.MBart50.many_to_many.es
+      errors_count: 0
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: EUbookshop
+  type: General
+  test:
+    source: NMT_datasets/en.es/EUbookshop/test.en
+    target: NMT_datasets/en.es/EUbookshop/test.es
+    size: 5313
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/EUbookshop/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/EUbookshop/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/EUbookshop/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Marian.beam_4.es
+      errors_count: 6
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Marian.greedy.es
+      errors_count: 6
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/EUbookshop/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.M2M100.1.2B.es
+      errors_count: 21
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.M2M100.418M.es
+      errors_count: 39
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.MBart50.one_to_many.es
+      errors_count: 52
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.MBart50.many_to_many.es
+      errors_count: 52
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: ParaCrawl
+  type: General
+  test:
+    source: NMT_datasets/en.es/ParaCrawl/test.en
+    target: NMT_datasets/en.es/ParaCrawl/test.es
+    size: 5227
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/ParaCrawl/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/ParaCrawl/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/ParaCrawl/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Marian.beam_4.es
+      errors_count: 0
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Marian.greedy.es
+      errors_count: 0
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/ParaCrawl/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.M2M100.1.2B.es
+      errors_count: 10
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.M2M100.418M.es
+      errors_count: 20
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.MBart50.one_to_many.es
+      errors_count: 16
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.MBart50.many_to_many.es
+      errors_count: 16
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0
+- name: CCAligned
+  type: General
+  test:
+    source: NMT_datasets/en.es/CCAligned/test.en
+    target: NMT_datasets/en.es/CCAligned/test.es
+    size: 5402
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/CCAligned/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/CCAligned/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/CCAligned/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Marian.beam_4.es
+      errors_count: 0
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Marian.greedy.es
+      errors_count: 0
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/CCAligned/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.M2M100.1.2B.es
+      errors_count: 0
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.M2M100.418M.es
+      errors_count: 0
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.MBart50.one_to_many.es
+      errors_count: 0
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.MBart50.many_to_many.es
+      errors_count: 0
+  dev:
+    source: null
+    target: null
+    size: 0
+  train:
+    source: null
+    target: null
+    size: 0

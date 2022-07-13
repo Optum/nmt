@@ -1,0 +1,18 @@
+defaults:
+  - _self_
+  - datasets_to_translate: main_evaluation_set
+  - translation_engines: engines
+
+create_evaluation_config: True
+evaluation_config_folder: configs/datasets_to_evaluate
+
+translate_subsets:
+  test: true
+  dev: false
+  train: false
+
+sentence_separation: false
+
+reuse_previous_results: true
+
+verbose: True

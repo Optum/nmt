@@ -1,0 +1,68 @@
+- class: Empty
+  name: Empty
+  type: Empty
+  #settings:
+- class: Azure
+  name: Azure
+  type: Cloud
+  #settings: 
+- class: Google
+  name: Google
+  type: Cloud
+  #settings: 
+- class: Marian
+  name: Marian.beam_4
+  type: OpenSource
+  settings:
+    marian_model: Helsinki-NLP/opus-mt-en-es
+    beam_size: 4
+- class: Marian
+  name: Marian.greedy
+  type: OpenSource
+  settings:
+    marian_model: Helsinki-NLP/opus-mt-en-es
+    beam_size: 1
+- class: Nemo
+  name: Nemo.24x6.beam_4
+  type: OpenSource
+  settings:
+    pretrained_model: nmt_en_es_transformer24x6
+    beam_size: 4
+- class: Nemo
+  name: Nemo.24x6.greedy
+  type: OpenSource
+  settings:
+    pretrained_model: nmt_en_es_transformer24x6
+    beam_size: 1
+- class: Nemo
+  name: Nemo.12x2.beam_4
+  type: OpenSource
+  settings:
+    pretrained_model: nmt_en_es_transformer12x2
+    beam_size: 4
+- class: Nemo
+  name: Nemo.12x2.greedy
+  type: OpenSource
+  settings:
+    pretrained_model: nmt_en_es_transformer12x2
+    beam_size: 1
+- class: M2M100
+  name: M2M100.1.2B
+  type: Multilingual
+  settings:
+    large_model: true
+- class: M2M100
+  name: M2M100.418M
+  type: Multilingual
+  settings:
+    large_model: false
+- class: MBart50
+  name: MBart50.one_to_many
+  type: Multilingual
+  settings:
+    eng_src_only: true
+- class: MBart50
+  name: MBart50.many_to_many
+  type: Multilingual
+  settings:
+    eng_src_only: false

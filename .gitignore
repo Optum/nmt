@@ -1,0 +1,11 @@
+**/.vscode
+**/__pycache__
+**/.env
+**/key.json
+**/.DS_Store
+**/.amlignore
+**/.amlignore.amltmp
+**/.ipynb_checkpoints
+NMT_datasets
+NMT_datasets_temp
+outputs

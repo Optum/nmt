@@ -1,0 +1,17 @@
+source_language: en
+target_language: es
+datasets:
+- name: TED2013
+  type: General
+  test:
+    source: NMT_datasets/en.es/TED2013/test.en
+    target: NMT_datasets/en.es/TED2013/test.es
+    size: 9
+  dev:
+    source: NMT_datasets/en.es/TED2013/dev.en
+    target: NMT_datasets/en.es/TED2013/dev.es
+    size: 87
+  train:
+    source: NMT_datasets/en.es/TED2013/train.en
+    target: NMT_datasets/en.es/TED2013/train.es
+    size: 90

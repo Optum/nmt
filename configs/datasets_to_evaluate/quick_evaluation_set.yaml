@@ -1,0 +1,70 @@
+source_language: en
+target_language: es
+datasets:
+- name: TED2013
+  type: General
+  test:
+    source: NMT_datasets/en.es/TED2013/test.en
+    target: NMT_datasets/en.es/TED2013/test.es
+    size: 9
+    translation:
+    - name: Empty
+      type: Empty
+      file: NMT_datasets/en.es/TED2013/test.Empty.es
+      errors_count: 0
+    - name: Azure
+      type: Cloud
+      file: NMT_datasets/en.es/TED2013/test.Azure.es
+      errors_count: 0
+    - name: Google
+      type: Cloud
+      file: NMT_datasets/en.es/TED2013/test.Google.es
+      errors_count: 0
+    - name: Marian.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Marian.beam_4.es
+      errors_count: 0
+    - name: Marian.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Marian.greedy.es
+      errors_count: 0
+    - name: Nemo.24x6.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.24x6.beam_4.es
+      errors_count: 0
+    - name: Nemo.24x6.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.24x6.greedy.es
+      errors_count: 0
+    - name: Nemo.12x2.beam_4
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.12x2.beam_4.es
+      errors_count: 0
+    - name: Nemo.12x2.greedy
+      type: OpenSource
+      file: NMT_datasets/en.es/TED2013/test.Nemo.12x2.greedy.es
+      errors_count: 0
+    - name: M2M100.1.2B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.M2M100.1.2B.es
+      errors_count: 0
+    - name: M2M100.418M
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.M2M100.418M.es
+      errors_count: 0
+    - name: MBart50.one_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.MBart50.one_to_many.es
+      errors_count: 0
+    - name: MBart50.many_to_many
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.MBart50.many_to_many.es
+      errors_count: 0
+  dev:
+    source: NMT_datasets/en.es/TED2013/dev.en
+    target: NMT_datasets/en.es/TED2013/dev.es
+    size: 87
+  train:
+    source: NMT_datasets/en.es/TED2013/train.en
+    target: NMT_datasets/en.es/TED2013/train.es
+    size: 90

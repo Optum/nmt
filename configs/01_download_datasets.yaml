@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - datasets_to_download: main_evaluation_set
+
+datasets_folder: NMT_datasets
+temp_folder: NMT_datasets_temp
+
+create_translator_config: True
+translator_config_folder: configs/datasets_to_translate
+
+random_seed: 42
+
+reuse_downloaded_files: true
+
+verbose: True

@@ -27,7 +27,7 @@ class DatasetScorer():
             with Timer( f'Creating scorer {scorer_class.name}', self.logger ):
                 scorer_config = scorer_configs[scorer_class.name] if scorer_class.name in scorer_configs else {}
                 scorer = create_scorer( scorer_class, self.source_language, self.target_language, verbose, **scorer_config )
-                self.scorers[scorer.scorer_name()] = scorer
+                self.scorers[scorer_class.name] = scorer
                 self.is_tokenization_required = self.is_tokenization_required or scorer.is_tokenization_required()
                 self.is_source_required = self.is_source_required or scorer.is_source_required()
 

@@ -69,18 +69,8 @@ def _save_evaluation_results_tsv( set_name, results_folder, datasets,
         os.makedirs( results_folder, exist_ok=False )
     results_file = os.path.join( results_folder, f'{set_name}.tsv' )
 
-    # Trying to determine what scores we have calculated
-    scorers = set()
-
-    for dataset in datasets:
-        for subset_type in ['test','dev','train']:
-            subset = dataset.get( subset_type, {} )
-            translations = subset.get( 'translation', [] )
-            for translation in translations:
-                scores = translation.get( 'score', {} )
-                scorers.update( scores.keys() )
-
-    scorers = sorted( list( scorers) )
+    # List of avalaible scorers
+    scorers = sorted( [scorer.name for scorer in Scorer] )
 
     with open( results_file, 'w', encoding='utf8' ) as tsv:
         header = '\t'.join( [

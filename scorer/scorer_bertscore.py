@@ -50,8 +50,3 @@ class ScorerBERTScore(ScorerBase):
         """Does this particular scorer needs original source text to do the scoring"""
         """Or just prediction and reference will be enough"""
         return False
-
-    @staticmethod
-    def scorer_name():
-        """Name of the scorer"""
-        return 'BERTScore'

@@ -276,9 +276,17 @@ Please keep in mind that if you will try to reproduce our results on later date,
   For NeMo we evaluated two models, large (24 encoder layers and 6 decoder layers) and small (12 encoder layers and 2 decoder layers)
 #### Multi-lingual engines
 
-- M2M100 and MBart50 is two massive multi-lingual models from the Facebook Research. They support translation between 100 and 50 languages respectively. Usually declared strength of such models is ability to work on low-resource languages. But we included them in our evaluation to see how well they can perform on common English-Spanish translation pair.
+- NLLB, M2M100 and MBart50 is three massive multi-lingual models from the Facebook Research. They support translation between 100 and 50 languages respectively. Usually declared strength of such models is ability to work on low-resource languages. But we included them in our evaluation to see how well they can perform on common English-Spanish translation pair.
 
-  For both models we used their PyTorch Transformers versions.
+  For all three models models we used their PyTorch Transformers versions.
+
+  NLLB description: [No Language Left Behind](https://research.facebook.com/publications/no-language-left-behind)
+
+  We evaluated three NLLB model versions, two distilled ones with 600M and 1.3B parameters and one full model with 1.3B parameters:
+
+  - [https://huggingface.co/facebook/nllb-200-distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M)
+  - [https://huggingface.co/facebook/nllb-200-distilled-1.3B](https://huggingface.co/facebook/nllb-200-distilled-1.3B)
+  - [https://huggingface.co/facebook/nllb-200-3.3B](https://huggingface.co/facebook/nllb-200-3.3B)
 
   M2M100 description: [Beyond English-Centric Multilingual Machine Translation](https://arxiv.org/abs/2010.11125)
 

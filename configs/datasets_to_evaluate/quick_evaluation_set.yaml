@@ -60,6 +60,18 @@ datasets:
       type: Multilingual
       file: NMT_datasets/en.es/TED2013/test.MBart50.many_to_many.es
       errors_count: 0
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2013/test.NLLB.1.3B.es
+      errors_count: 0
   dev:
     source: NMT_datasets/en.es/TED2013/dev.en
     target: NMT_datasets/en.es/TED2013/dev.es

@@ -60,6 +60,18 @@ datasets:
       type: Multilingual
       file: NMT_datasets/en.es/EMEA/test.MBart50.many_to_many.es
       errors_count: 32
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/EMEA/test.NLLB.1.3B.es
+      errors_count: 0
   dev:
     source: null
     target: null
@@ -127,6 +139,18 @@ datasets:
       type: Multilingual
       file: NMT_datasets/en.es/WikiMatrix/test.MBart50.many_to_many.es
       errors_count: 31
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/WikiMatrix/test.NLLB.1.3B.es
+      errors_count: 0
   dev:
     source: null
     target: null
@@ -193,6 +217,18 @@ datasets:
     - name: MBart50.many_to_many
       type: Multilingual
       file: NMT_datasets/en.es/TED2020/test.MBart50.many_to_many.es
+      errors_count: 0
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/TED2020/test.NLLB.1.3B.es
       errors_count: 0
   dev:
     source: null
@@ -261,6 +297,18 @@ datasets:
       type: Multilingual
       file: NMT_datasets/en.es/OpenSubtitles/test.MBart50.many_to_many.es
       errors_count: 0
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/OpenSubtitles/test.NLLB.1.3B.es
+      errors_count: 0
   dev:
     source: null
     target: null
@@ -328,6 +376,18 @@ datasets:
       type: Multilingual
       file: NMT_datasets/en.es/EUbookshop/test.MBart50.many_to_many.es
       errors_count: 52
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/EUbookshop/test.NLLB.1.3B.es
+      errors_count: 0
   dev:
     source: null
     target: null
@@ -395,6 +455,18 @@ datasets:
       type: Multilingual
       file: NMT_datasets/en.es/ParaCrawl/test.MBart50.many_to_many.es
       errors_count: 16
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/ParaCrawl/test.NLLB.1.3B.es
+      errors_count: 0
   dev:
     source: null
     target: null
@@ -461,6 +533,18 @@ datasets:
     - name: MBart50.many_to_many
       type: Multilingual
       file: NMT_datasets/en.es/CCAligned/test.MBart50.many_to_many.es
+      errors_count: 0
+    - name: NLLB.Distilled.600M
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.NLLB.Distilled.600M.es
+      errors_count: 0
+    - name: NLLB.Distilled.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.NLLB.Distilled.1.3B.es
+      errors_count: 0
+    - name: NLLB.1.3B
+      type: Multilingual
+      file: NMT_datasets/en.es/CCAligned/test.NLLB.1.3B.es
       errors_count: 0
   dev:
     source: null

@@ -66,3 +66,18 @@
   type: Multilingual
   settings:
     eng_src_only: false
+- class: NLLB
+  name: NLLB.Distilled.600M
+  type: Multilingual
+  settings:
+    model_size: Distilled_600M
+- class: NLLB
+  name: NLLB.Distilled.1.3B
+  type: Multilingual
+  settings:
+    model_size: Distilled_13B
+- class: NLLB
+  name: NLLB.1.3B
+  type: Multilingual
+  settings:
+    model_size: Full_13B

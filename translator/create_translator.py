@@ -9,6 +9,7 @@ class Translator(Enum):
     Nemo = 'translator.translator_nemo.TranslatorNemo'
     M2M100 = 'translator.translator_M2M100.TranslatorM2M100'
     MBart50 = 'translator.translator_MBart50.TranslatorMBart50'
+    NLLB = 'translator.translator_NLLB.TranslatorNLLB'
 
 def create_translator( translator: Translator, verbose = False, **kwargs ):
     try:

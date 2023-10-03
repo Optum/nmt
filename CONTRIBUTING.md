@@ -18,7 +18,7 @@ We have some general guidelines towards contributing to this project.
 
 ### Languages
 
-*Lua*
+*Python*
 
 ## Pull Requests
 
